@@ -182,17 +182,7 @@ int main() {
 
     file.close();
 
-    // Ładowanie stopwords
-    std::string path = "G:\\LLM\\corpora\\stopwords\\english";
-    std::ifstream stopwordsFile(path);
-    std::vector<std::string> stopwords;
-
-    while (std::getline(stopwordsFile, line)) {
-        stopwords.push_back(line);
-    }
-
-    stopwordsFile.close();
-
+  
     time_t stop = std::time(NULL);
     int diff_time = std::difftime(stop, start);
 
